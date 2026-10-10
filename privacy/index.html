@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open Captions privacy policy.">
+  <title>Open Captions Privacy Policy / Polityka prywatności</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+      background: #fffdf2;
+      color: #17140a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: linear-gradient(180deg, #ffd52c 0, #fff8dc 250px, #fffdf2 560px);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 22px 72px;
+    }
+
+    header {
+      margin-bottom: 34px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      color: rgba(23, 20, 10, .72);
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    h1, h2, h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(26px, 5vw, 38px);
+    }
+
+    h3 {
+      margin: 30px 0 8px;
+      font-size: 21px;
+    }
+
+    p, li {
+      color: rgba(23, 20, 10, .76);
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+    }
+
+    .lead {
+      max-width: 720px;
+      color: rgba(23, 20, 10, .82);
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    a {
+      color: #6d4b00;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      border: 2px solid rgba(23, 20, 10, .18);
+      border-radius: 8px;
+      max-width: 100%;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, .72);
+      color: #17140a;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    section {
+      border-top: 1px solid rgba(23, 20, 10, .16);
+      margin-top: 34px;
+      padding-top: 26px;
+    }
+
+    .note {
+      color: rgba(23, 20, 10, .56);
+    }
+
+    @media (max-width: 720px) {
+      main {
+        width: 100vw;
+        max-width: 100vw;
+      }
+
+      header,
+      section,
+      h1,
+      h2,
+      h3,
+      ul {
+        width: calc(100vw - 88px);
+        max-width: calc(100vw - 88px);
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li {
+        width: auto;
+        max-width: 100%;
+      }
+
+      p,
+      li,
+      .lead {
+        width: 250px;
+        max-width: calc(100vw - 44px);
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <a class="brand" href="../">
+      <img src="../assets/icon.png" alt="" width="36" height="36">
+      <span>Open Captions</span>
+    </a>
+    <h1>Privacy Policy</h1>
+    <p class="lead">Open Captions is built so your videos, audio and captions stay on the device you use. There are no accounts, ads, analytics or tracking.</p>
+    <nav aria-label="Language and support">
+      <a class="button" href="#english">English</a>
+      <a class="button" href="#polski">Polski</a>
+      <a class="button" href="../support/">Support / Pomoc</a>
+    </nav>
+  </header>
+
+  <section id="english" lang="en" aria-labelledby="english-heading">
+    <h2 id="english-heading">English</h2>
+    <p><strong>Effective date:</strong> 2026-10-10</p>
+    <p><strong>Data controller:</strong> Amazing Company sp. z o.o.</p>
+
+    <h3>What the app processes</h3>
+    <p>Open Captions creates burned-in captions for videos. Your videos, audio, transcripts, captions, dictionaries, styles, projects, exports, task logs and hardware diagnostics stay on your device or in the folders you choose.</p>
+    <p>On phones, the app opens only the videos you select through Photos, Gallery or Files pickers. Saving an export to Photos or Gallery happens only for files the app creates and only through the system permission or picker flow.</p>
+
+    <h3>Network use</h3>
+    <ul>
+      <li>Speech recognition runs on device. A speech model may be downloaded only after you confirm the download and see its size.</li>
+      <li>Model files are requested from pinned public Hugging Face model URLs: <a href="https://huggingface.co/argmaxinc/whisperkit-coreml">argmaxinc/whisperkit-coreml</a> and <a href="https://huggingface.co/FluidInference/parakeet-ultra-coreml">FluidInference/parakeet-ultra-coreml</a>. The request does not include your videos, audio or captions.</li>
+      <li>Like any web request, the model host may receive ordinary connection data such as IP address, time and requested files under its own privacy policy.</li>
+      <li>After the needed model is downloaded, captioning and export work offline.</li>
+      <li>On Mac, server mode can serve the editor on the local network or over your private Tailscale network. Access requires a token. Media and project data remain on the Mac that runs the server.</li>
+    </ul>
+
+    <h3>What we do not do</h3>
+    <ul>
+      <li>No accounts or sign-in.</li>
+      <li>No analytics, telemetry, crash-reporting SDKs or usage statistics sent to us.</li>
+      <li>No advertising, tracking, data sharing or data selling.</li>
+      <li>No access to contacts, location, camera, microphone or a broad media library.</li>
+      <li>No servers that receive, inspect, restore or store your videos, audio, transcripts, captions, projects or exports.</li>
+    </ul>
+
+    <h3>Children</h3>
+    <p>The app does not collect personal data from anyone, including children.</p>
+
+    <h3>Changes</h3>
+    <p>If this policy changes, the new version will be published here with a new effective date.</p>
+
+    <h3>Contact</h3>
+    <p>Questions about privacy: <a href="mailto:kontakt@coderoad.pl">kontakt@coderoad.pl</a>.</p>
+  </section>
+
+  <section id="polski" lang="pl" aria-labelledby="polski-heading">
+    <h2 id="polski-heading">Polski</h2>
+    <p><strong>Obowiązuje od:</strong> 2026-10-10</p>
+    <p><strong>Administrator danych:</strong> Amazing Company sp. z o.o.</p>
+
+    <h3>Co przetwarza aplikacja</h3>
+    <p>Open Captions tworzy napisy wtopione w filmy. Filmy, dźwięk, transkrypcje, napisy, słowniki, style, projekty, eksporty, dzienniki zadań i diagnostyka sprzętu zostają na Twoim urządzeniu albo w folderach, które wybierzesz.</p>
+    <p>Na telefonach aplikacja otwiera tylko filmy wskazane przez systemowy wybór Zdjęć, Galerii lub Plików. Zapis eksportu do Zdjęć albo Galerii dotyczy wyłącznie plików utworzonych przez aplikację i odbywa się przez systemowe uprawnienie albo wybór miejsca zapisu.</p>
+
+    <h3>Połączenia sieciowe</h3>
+    <ul>
+      <li>Rozpoznawanie mowy działa na urządzeniu. Model mowy może zostać pobrany dopiero po Twoim potwierdzeniu i pokazaniu rozmiaru pobierania.</li>
+      <li>Pliki modeli są pobierane z przypiętych publicznych adresów modeli w Hugging Face: <a href="https://huggingface.co/argmaxinc/whisperkit-coreml">argmaxinc/whisperkit-coreml</a> oraz <a href="https://huggingface.co/FluidInference/parakeet-ultra-coreml">FluidInference/parakeet-ultra-coreml</a>. Żądanie nie zawiera Twoich filmów, dźwięku ani napisów.</li>
+      <li>Jak przy każdym połączeniu internetowym, host modelu może otrzymać zwykłe dane połączenia, takie jak adres IP, czas i pobierane pliki, zgodnie z własną polityką prywatności.</li>
+      <li>Po pobraniu potrzebnego modelu tworzenie napisów i eksport działają offline.</li>
+      <li>Na Macu tryb serwera może udostępniać edytor w sieci lokalnej albo przez prywatną sieć Tailscale. Dostęp wymaga tokena. Media i dane projektów pozostają na Macu, który uruchamia serwer.</li>
+    </ul>
+
+    <h3>Czego nie robimy</h3>
+    <ul>
+      <li>Nie ma kont ani logowania.</li>
+      <li>Nie ma analityki, telemetrii, SDK do zgłaszania awarii ani statystyk użycia wysyłanych do nas.</li>
+      <li>Nie ma reklam, śledzenia, udostępniania ani sprzedawania danych.</li>
+      <li>Nie ma dostępu do kontaktów, lokalizacji, kamery, mikrofonu ani szerokiej biblioteki multimediów.</li>
+      <li>Nie mamy serwerów, które odbierałyby, sprawdzały, odtwarzały albo przechowywały Twoje filmy, dźwięk, transkrypcje, napisy, projekty lub eksporty.</li>
+    </ul>
+
+    <h3>Dzieci</h3>
+    <p>Aplikacja nie zbiera danych osobowych od nikogo, także od dzieci.</p>
+
+    <h3>Zmiany</h3>
+    <p>Jeśli ta polityka się zmieni, nowa wersja pojawi się tutaj z nową datą obowiązywania.</p>
+
+    <h3>Kontakt</h3>
+    <p>Pytania dotyczące prywatności: <a href="mailto:kontakt@coderoad.pl">kontakt@coderoad.pl</a>.</p>
+  </section>
+
+  <p class="note">Last updated: 2026-10-10.</p>
+</main>
+</body>
+</html>

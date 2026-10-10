@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open Captions makes burned-in captions for vertical videos on your own device.">
+  <title>Open Captions</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+      background: #fff8dc;
+      color: #17140a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        linear-gradient(145deg, rgba(255, 213, 44, .92), rgba(255, 248, 220, .5) 42%, #ffffff 88%),
+        #fff8dc;
+    }
+
+    main {
+      width: min(960px, 100%);
+      margin: 0 auto;
+      padding: clamp(32px, 8vw, 88px) 22px 48px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: clamp(24px, 7vw, 72px);
+      align-items: center;
+      min-height: min(700px, 82vh);
+    }
+
+    .hero > div {
+      min-width: 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+      color: rgba(23, 20, 10, .76);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      box-shadow: 0 12px 32px rgba(65, 46, 0, .16);
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      font-size: clamp(36px, 9vw, 84px);
+      line-height: .98;
+      letter-spacing: 0;
+      overflow-wrap: break-word;
+    }
+
+    .lead {
+      max-width: 640px;
+      margin: 24px 0 0;
+      color: rgba(23, 20, 10, .76);
+      font-size: clamp(19px, 2.6vw, 24px);
+      line-height: 1.45;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    a {
+      color: #6d4b00;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      border: 2px solid rgba(23, 20, 10, .18);
+      border-radius: 8px;
+      max-width: 100%;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, .72);
+      color: #17140a;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .panel {
+      width: min(260px, 34vw);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(23, 20, 10, .1);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, .46);
+      box-shadow: 0 30px 70px rgba(65, 46, 0, .14);
+    }
+
+    .panel img {
+      width: 68%;
+      height: 68%;
+      border-radius: 22%;
+      box-shadow: 0 24px 52px rgba(65, 46, 0, .18);
+    }
+
+    section {
+      border-top: 1px solid rgba(23, 20, 10, .16);
+      padding-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      font-size: clamp(24px, 5vw, 34px);
+      letter-spacing: 0;
+    }
+
+    p, li {
+      line-height: 1.65;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .item {
+      min-width: 0;
+      border-top: 3px solid #ffd52c;
+      padding-top: 14px;
+    }
+
+    .item p {
+      margin: 0;
+      color: rgba(23, 20, 10, .7);
+    }
+
+    .pl {
+      margin-top: 46px;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding-top: 26px;
+        width: 100vw;
+        max-width: 100vw;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .hero,
+      section,
+      .grid,
+      .item {
+        width: calc(100vw - 88px);
+        max-width: calc(100vw - 88px);
+      }
+
+      .lead,
+      p {
+        width: 250px;
+        max-width: calc(100vw - 44px);
+        font-size: 16px;
+      }
+
+      h1 {
+        width: calc(100vw - 88px);
+        max-width: calc(100vw - 88px);
+        font-size: 30px;
+        line-height: 1.06;
+      }
+
+      .panel {
+        width: min(210px, 62vw);
+        grid-row: 1;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <div>
+      <div class="brand">
+        <img src="assets/icon.png" alt="" width="42" height="42">
+        <span>Open Captions</span>
+      </div>
+      <h1>On-device captions for vertical video.</h1>
+      <p class="lead">Open Captions turns speech into styled, word-highlighted subtitles and burns them into your video. Processing stays on your device.</p>
+      <nav aria-label="Main pages">
+        <a class="button" href="privacy/">Privacy Policy / Polityka prywatności</a>
+        <a class="button" href="support/">Support / Pomoc</a>
+        <a class="button" href="#pl">PL</a>
+      </nav>
+    </div>
+    <div class="panel" aria-hidden="true">
+      <img src="assets/icon.png" alt="" width="512" height="512">
+    </div>
+  </div>
+
+  <section aria-labelledby="en-heading">
+    <h2 id="en-heading">Private caption editing</h2>
+    <div class="grid">
+      <div class="item">
+        <p>Videos, audio, transcripts, captions, projects and exports are stored locally.</p>
+      </div>
+      <div class="item">
+        <p>Speech models download only after you agree, then the app works offline.</p>
+      </div>
+      <div class="item">
+        <p>No accounts, analytics, ads, tracking or cloud processing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pl" class="pl" lang="pl" aria-labelledby="pl-heading">
+    <h2 id="pl-heading">Prywatna edycja napisów</h2>
+    <div class="grid">
+      <div class="item">
+        <p>Filmy, dźwięk, transkrypcje, napisy, projekty i eksporty zostają lokalnie.</p>
+      </div>
+      <div class="item">
+        <p>Modele mowy pobierają się tylko po Twojej zgodzie, a potem aplikacja działa offline.</p>
+      </div>
+      <div class="item">
+        <p>Bez kont, analityki, reklam, śledzenia i przetwarzania w chmurze.</p>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
