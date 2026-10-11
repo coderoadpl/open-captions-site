@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Synthetic Open Captions sample video for App Review and testing.">
+  <title>Open Captions Sample Video</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+      background: #fff8dc;
+      color: #17140a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        linear-gradient(145deg, rgba(255, 213, 44, .92), rgba(255, 248, 220, .5) 42%, #ffffff 88%),
+        #fff8dc;
+    }
+
+    main {
+      width: min(960px, 100%);
+      margin: 0 auto;
+      padding: clamp(32px, 8vw, 88px) 22px 48px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+      color: rgba(23, 20, 10, .76);
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      box-shadow: 0 12px 32px rgba(65, 46, 0, .16);
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      font-size: clamp(36px, 8vw, 72px);
+      line-height: 1;
+      letter-spacing: 0;
+      overflow-wrap: break-word;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 24px 0 0;
+      color: rgba(23, 20, 10, .76);
+      font-size: clamp(18px, 2.4vw, 23px);
+      line-height: 1.45;
+    }
+
+    a {
+      color: #6d4b00;
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      border: 2px solid rgba(23, 20, 10, .18);
+      border-radius: 8px;
+      max-width: 100%;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, .72);
+      color: #17140a;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 32px 0;
+    }
+
+    .video-wrap {
+      width: min(360px, 100%);
+      margin-top: 22px;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border-radius: 8px;
+      background: #17140a;
+      box-shadow: 0 24px 52px rgba(65, 46, 0, .18);
+    }
+
+    section {
+      border-top: 1px solid rgba(23, 20, 10, .16);
+      margin-top: 42px;
+      padding-top: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      font-size: clamp(24px, 5vw, 34px);
+      letter-spacing: 0;
+    }
+
+    p, li {
+      line-height: 1.65;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <a class="brand" href="../">
+    <img src="../assets/icon.png" alt="" width="42" height="42">
+    <span>Open Captions</span>
+  </a>
+
+  <h1>Sample video for testing.</h1>
+  <p class="lead">This 20 second 1080 x 1920 MP4 contains synthetic visuals and clear English and Polish speech generated on macOS. It uses no real people, footage, music, or third-party media.</p>
+
+  <div class="actions">
+    <a class="button" href="open-captions-sample.mp4">Download MP4</a>
+    <a class="button" href="../privacy/">Privacy Policy / Polityka prywatności</a>
+  </div>
+
+  <div class="video-wrap">
+    <video controls muted playsinline preload="metadata" src="open-captions-sample.mp4"></video>
+  </div>
+
+  <section lang="pl" aria-labelledby="pl-heading">
+    <h2 id="pl-heading">Film testowy</h2>
+    <p>Ten 20-sekundowy plik MP4 1080 x 1920 zawiera syntetyczny obraz oraz wyraźną mowę po angielsku i po polsku wygenerowaną na macOS. Nie zawiera prawdziwych osób, nagrań, muzyki ani materiałów stron trzecich.</p>
+    <p><a href="open-captions-sample.mp4">Pobierz MP4</a></p>
+  </section>
+</main>
+</body>
+</html>
